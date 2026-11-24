@@ -61,6 +61,12 @@ p{margin:0}
 .naprawy>svg{width:52px;height:52px;color:#8FA9FF}
 .naprawy h3{margin:0 0 6px}
 .naprawy p{color:rgba(255,255,255,.82);font-size:16px}
+.realizacja{margin-top:28px;display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:20px 40px;align-items:center}
+.realizacja figure{margin:0;position:relative;aspect-ratio:4/3;overflow:hidden;background:var(--szary)}
+.realizacja figure img{width:100%;height:100%;object-fit:cover}
+.realizacja figure::after{content:"";position:absolute;left:0;right:0;bottom:0;height:17px;background:linear-gradient(#fff,#fff) 0 0/100% 3px no-repeat,linear-gradient(#fff,#fff) 0 7px/100% 3px no-repeat,linear-gradient(var(--kobalt),var(--kobalt)) 0 14px/100% 3px no-repeat}
+.realizacja h3{margin:0 0 8px}
+@media (max-width:860px){.realizacja{grid-template-columns:1fr}}
 .roleta{display:grid;gap:5px;margin-top:40px;max-width:280px}
 .roleta i{display:block;height:3px;background:rgba(255,255,255,.55)}
 .roleta i:last-child{background:var(--kobalt);width:100%}
@@ -274,6 +280,13 @@ form .btn{width:100%}
     <p>Elektryka i&nbsp;hydraulika w&nbsp;pełnym zakresie: usterki, wymiany i&nbsp;naprawy w&nbsp;lokalach, mieszkaniach, mieszkaniach na wynajem oraz w&nbsp;domach jednorodzinnych; jedna ekipa zamiast kilku fachowców.</p>
    </div>
    <a class="btn btn-k" href="#kontakt">Zgłoś naprawę</a>
+  </div>
+  <div class="realizacja" id="realizacje">
+   <figure><img src="img/realizacja-likwidacja-1000.webp" srcset="img/realizacja-likwidacja-1000.webp 1000w, img/realizacja-likwidacja-1600.webp 1600w" sizes="(max-width:860px) 92vw, 680px" width="1600" height="1200" loading="lazy" alt="Sala sklepu po likwidacji: puste wnętrze bez regałów i wyposażenia"></figure>
+   <div>
+    <h3>Z&nbsp;naszych realizacji: sklep po likwidacji</h3>
+    <p>Sala sklepu po likwidacji wykonanej przez naszą firmę: regały i&nbsp;wyposażenie zdemontowane, lokal opróżniony i&nbsp;gotowy do dalszych prac.</p>
+   </div>
   </div>
  </div>
 </section>
