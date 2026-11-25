@@ -3,10 +3,14 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="robots" content="noindex,nofollow">
+<meta name="robots" content="noindex, nofollow" data-podglad>
 <title>Likwidacja sklepów, remonty, elektryka i hydraulika - cała Polska | A.G. Likwidacje i Remonty Lokali</title>
 <meta name="description" content="Likwidacja sklepów, remonty lokali, elektryka i hydraulika dla sieci handlowych i generalnych wykonawców. Przeglądy i protokoły elektryczne. Siedziba w Olsztynie, prace w całej Polsce.">
 <meta name="theme-color" content="#0F1A2B">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pl_PL">
+<meta property="og:title" content="Likwidacja sklepów, remonty, elektryka i hydraulika - cała Polska | A.G. Likwidacje i Remonty Lokali">
+<meta property="og:description" content="Likwidacja sklepów, remonty lokali, elektryka i hydraulika dla sieci handlowych i generalnych wykonawców. Przeglądy i protokoły elektryczne. Siedziba w Olsztynie, prace w całej Polsce.">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='4' fill='%230F1A2B'/%3E%3Crect x='8' y='8' width='24' height='24' fill='none' stroke='%23fff' stroke-width='3'/%3E%3Crect x='8' y='8' width='24' height='6' fill='%23fff'/%3E%3Cpath d='M11 19h18' stroke='%23fff' stroke-width='2.5'/%3E%3Cpath d='M11 24h18' stroke='%233E6AF0' stroke-width='2.5'/%3E%3C/svg%3E">
 <link rel="preload" href="fonts/archivo-latin-standard-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" as="image" href="img/hero-m-640.webp" media="(max-width:700px)" imagesrcset="img/hero-m-640.webp 640w, img/hero-m-1000.webp 1000w" imagesizes="100vw">
@@ -157,68 +161,153 @@ form .btn{width:100%}
 .wylinka-badge:hover .wy-pod,.wylinka-badge:focus-visible .wy-pod{opacity:1}
 @media (prefers-reduced-motion:reduce){.wylinka-badge .wy-old,.wylinka-badge .wy-pod{transition:none}.wylinka-badge:hover .wy-old,.wylinka-badge:focus-visible .wy-old{transform:none;opacity:.45}.wylinka-badge:hover .wy-pod,.wylinka-badge:focus-visible .wy-pod{opacity:0}}
 @media (max-width:1000px){
- .karty{grid-template-columns:repeat(4,72%);overflow-x:auto;scroll-snap-type:x mandatory;gap:14px;padding-bottom:10px;margin-right:-20px;padding-right:20px;scrollbar-width:thin}
- .karta{scroll-snap-align:start}
- .sek-head,.split,.obszar,.kontakt{grid-template-columns:1fr}
- .split figure{aspect-ratio:4/3}
- .ciemna .tlo{inset:auto 0 0 0;height:300px;position:relative}
- .ciemna .tlo::before{background:linear-gradient(180deg,var(--granat) 0%,rgba(15,26,43,.2) 60%)}
- .ciemna{padding-bottom:0;display:flex;flex-direction:column}
- .ciemna .tlo{order:2;margin-top:40px}
- .ciemna .tlo::before{background:linear-gradient(180deg,var(--granat) 0%,rgba(15,26,43,.1) 45%)}
- .stopka .wrap{grid-template-columns:1fr 1fr}
- .stopka .wrap>div:first-child{grid-column:1/-1}
+.karty{grid-template-columns:repeat(4,72%);overflow-x:auto;scroll-snap-type:x mandatory;gap:14px;padding-bottom:10px;margin-right:-20px;padding-right:20px;scrollbar-width:thin}
+.karta{scroll-snap-align:start}
+.sek-head,.split,.obszar,.kontakt{grid-template-columns:1fr}
+.split figure{aspect-ratio:4/3}
+.ciemna .tlo{inset:auto 0 0 0;height:300px;position:relative}
+.ciemna .tlo::before{background:linear-gradient(180deg,var(--granat) 0%,rgba(15,26,43,.2) 60%)}
+.ciemna{padding-bottom:0;display:flex;flex-direction:column}
+.ciemna .tlo{order:2;margin-top:40px}
+.ciemna .tlo::before{background:linear-gradient(180deg,var(--granat) 0%,rgba(15,26,43,.1) 45%)}
+.stopka .wrap{grid-template-columns:1fr 1fr}
+.stopka .wrap>div:first-child{grid-column:1/-1}
 }
 @media (max-width:760px){
- body{font-size:16px}
- .wrap{width:calc(100% - 32px)}
- .menu{position:fixed;inset:0;background:var(--granat);flex-direction:column;align-items:flex-start;justify-content:center;gap:8px;padding:0 28px;transform:translateY(-100%);transition:transform .28s cubic-bezier(.3,.7,.3,1);visibility:hidden}
- .menu a{font-size:26px;font-weight:800}
- .menu .btn{margin-top:16px;font-size:18px;min-height:52px}
- .otwarte .menu{transform:none;visibility:visible}
- .burger{display:block;position:relative;z-index:6}
- .otwarte .burger span:nth-child(1){transform:translateY(7px) rotate(45deg)}
- .otwarte .burger span:nth-child(2){opacity:0}
- .otwarte .burger span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
- .top .wrap{height:64px}
- .znak svg{width:34px;height:34px}
- .znak b{font-size:19px}
- .znak span span{font-size:12px}
- .hero .wrap{padding:96px 0 28px}
- .hero h1{font-size:clamp(27px,7.6vw,34px)}
- .hero .lead{margin-top:14px;font-size:15.5px;line-height:1.5}
- .hero .cta{margin-top:24px;display:grid;grid-template-columns:1fr 1fr;gap:10px}
- .hero .btn{padding:0 10px;font-size:15px;min-height:50px}
- .roleta{margin-top:24px;max-width:160px;gap:4px}
- .sek{padding:64px 0}
- .sek-head{margin-bottom:28px}
- .karty{grid-template-columns:repeat(4,80%);margin-right:-16px;padding-right:16px}
- form{grid-template-columns:1fr;padding:20px}
- .dane a{font-size:19px}
- .obszar .miejsca div{flex-direction:column;gap:2px}
- .obszar .miejsca small{text-align:left}
- .naprawy{grid-template-columns:1fr;padding:24px 20px}
- .naprawy>svg{width:42px;height:42px}
- .atuty{margin-top:18px;gap:8px}
- .atuty li{font-size:14px;padding:7px 12px}
+body{font-size:16px}
+.wrap{width:calc(100% - 32px)}
+.menu{position:fixed;inset:0;background:var(--granat);flex-direction:column;align-items:flex-start;justify-content:center;gap:8px;padding:0 28px;transform:translateY(-100%);transition:transform .28s cubic-bezier(.3,.7,.3,1);visibility:hidden}
+.menu a{font-size:26px;font-weight:800}
+.menu .btn{margin-top:16px;font-size:18px;min-height:52px}
+.otwarte .menu{transform:none;visibility:visible}
+.burger{display:block;position:relative;z-index:6}
+.otwarte .burger span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.otwarte .burger span:nth-child(2){opacity:0}
+.otwarte .burger span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+.top .wrap{height:64px}
+.znak svg{width:34px;height:34px}
+.znak b{font-size:19px}
+.znak span span{font-size:12px}
+.hero .wrap{padding:96px 0 28px}
+.hero h1{font-size:clamp(27px,7.6vw,34px)}
+.hero .lead{margin-top:14px;font-size:15.5px;line-height:1.5}
+.hero .cta{margin-top:24px;display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.hero .btn{padding:0 10px;font-size:15px;min-height:50px}
+.roleta{margin-top:24px;max-width:160px;gap:4px}
+.sek{padding:64px 0}
+.sek-head{margin-bottom:28px}
+.karty{grid-template-columns:repeat(4,80%);margin-right:-16px;padding-right:16px}
+form{grid-template-columns:1fr;padding:20px}
+.dane a{font-size:19px}
+.obszar .miejsca div{flex-direction:column;gap:2px}
+.obszar .miejsca small{text-align:left}
+.naprawy{grid-template-columns:1fr;padding:24px 20px}
+.naprawy>svg{width:42px;height:42px}
+.atuty{margin-top:18px;gap:8px}
+.atuty li{font-size:14px;padding:7px 12px}
 }
-@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+.menu{gap:24px}
+.menu a{font-size:15.5px}
+.menu a[aria-current=page]{border-color:#fff}
+.menu .btn[aria-current=page]{background:var(--kobalt-c)}
+@media (max-width:1140px){
+.menu{position:fixed;inset:0;background:var(--granat);flex-direction:column;align-items:flex-start;justify-content:center;gap:6px;padding:0 28px;transform:translateY(-100%);transition:transform .28s cubic-bezier(.3,.7,.3,1);visibility:hidden}
+.menu a{font-size:24px;font-weight:800;padding:4px 0}
+.menu a[aria-current=page]{color:#8FA9FF;border-color:transparent}
+.menu .btn{margin-top:16px;font-size:18px;min-height:52px;color:#fff!important}
+.otwarte .menu{transform:none;visibility:visible}
+.burger{display:block;position:relative;z-index:6}
+.otwarte .burger span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.otwarte .burger span:nth-child(2){opacity:0}
+.otwarte .burger span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+.otwarte .znak{position:relative;z-index:6}
+}
+@media (max-width:760px){.menu a{font-size:22px}}
+@media (max-height:560px) and (max-width:1140px){.menu{justify-content:flex-start;padding-top:80px;overflow-y:auto}}
+/* podstrony */
+.hero-pod{min-height:78vh;min-height:78svh}
+.hero-pod h1{max-width:19ch;font-size:clamp(30px,4.2vw,56px)}
+.hero-pod .lead{max-width:50ch}
+.glowka{background:var(--granat);color:#fff;padding:150px 0 64px;position:relative}
+.glowka h1{font-size:clamp(30px,4.2vw,56px);max-width:20ch}
+.glowka .lead{font-size:clamp(16px,1.5vw,20px);line-height:1.55;max-width:52ch;margin-top:18px;color:rgba(255,255,255,.88)}
+.glowka .cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.glowka .roleta{margin-top:36px}
+.split.odwr figure{order:2}
+.split figure{position:relative}
+.split figure::after{content:"";position:absolute;left:0;right:0;bottom:0;height:17px;background:linear-gradient(#fff,#fff) 0 0/100% 3px no-repeat,linear-gradient(#fff,#fff) 0 7px/100% 3px no-repeat,linear-gradient(var(--kobalt),var(--kobalt)) 0 14px/100% 3px no-repeat}
+.szare .split figure::after{background:linear-gradient(var(--szary),var(--szary)) 0 0/100% 3px no-repeat,linear-gradient(var(--szary),var(--szary)) 0 7px/100% 3px no-repeat,linear-gradient(var(--kobalt),var(--kobalt)) 0 14px/100% 3px no-repeat}
+.split figure.poziom{aspect-ratio:4/3}
+.split p+p{margin-top:16px}
+.dwie{display:grid;grid-template-columns:1fr 1fr;gap:24px 64px;align-items:start}
+.dwie h2{margin-bottom:18px}
+.dwie>div>p{color:var(--opis);font-size:18px}
+.dwie>div>p+p{margin-top:16px}
+.kroki-j{list-style:none;margin:0;padding:0;border-top:1px solid var(--linia)}
+.kroki-j li{padding:18px 0;border-bottom:1px solid var(--linia)}
+.kroki-j b{display:block;font-size:19px;margin-bottom:4px}
+.kroki-j span{color:var(--opis);font-size:16px}
+a.karta{text-decoration:none;color:inherit}
+a.karta h3{transition:color .18s ease}
+a.karta:hover h3{color:var(--kobalt)}
+.karta .dalej{margin-top:auto;padding-top:14px;font-weight:700;font-size:15px;color:var(--kobalt)}
+.karty.k5{grid-template-columns:repeat(5,1fr)}
+a.naprawy{text-decoration:none}
+.pas{background:var(--granat);color:#fff;padding:64px 0}
+.pas .wrap{display:grid;grid-template-columns:1fr auto;gap:24px 48px;align-items:center}
+.pas h2{font-size:clamp(26px,2.8vw,38px)}
+.pas p{color:rgba(255,255,255,.82);font-size:18px;margin-top:10px;max-width:56ch}
+.pas .cta{display:flex;flex-wrap:wrap;gap:12px}
+.pas .roleta{margin-top:24px}
+.mapa{margin-top:0;background:var(--szary)}
+.mapa iframe{display:block;width:100%;height:440px;border:0}
+.tekst{max-width:760px}
+.tekst h2{font-size:24px;margin:40px 0 12px}
+.tekst p,.tekst li{color:var(--opis);font-size:17px}
+.tekst ul{padding-left:20px}
+.fakty{margin:28px 0 0;display:grid;grid-template-columns:auto 1fr;gap:0;border-top:1px solid var(--linia)}
+.fakty dt,.fakty dd{margin:0;padding:12px 0;border-bottom:1px solid var(--linia)}
+.fakty dt{font-weight:700;padding-right:24px}
+.fakty dd{color:var(--opis)}
+@media (max-width:1180px){.karty.k5{grid-template-columns:repeat(5,minmax(230px,1fr));overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:10px;scrollbar-width:thin}.karty.k5 .karta{scroll-snap-align:start}}
+@media (max-width:1000px){
+.dwie,.pas .wrap{grid-template-columns:1fr}
+.split.odwr figure{order:0}
+.karty.k5{grid-template-columns:repeat(5,72%);margin-right:-20px;padding-right:20px}
+}
+@media (max-width:760px){
+.hero-pod{min-height:84vh;min-height:84svh}
+.hero-pod h1,.glowka h1{font-size:clamp(26px,7.4vw,33px)}
+.glowka{padding:104px 0 40px}
+.glowka .cta{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.glowka .btn{padding:0 10px;font-size:15px;min-height:50px}
+.glowka .lead{font-size:15.5px;margin-top:14px}
+.glowka .roleta{margin-top:24px;max-width:160px}
+.karty.k5{grid-template-columns:repeat(5,80%);margin-right:-16px;padding-right:16px}
+.pas{padding:48px 0}
+.pas .cta{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.pas .btn{padding:0 10px;font-size:15px}
+.mapa iframe{height:340px}
+.fakty{grid-template-columns:1fr}
+.fakty dt{padding-bottom:0;border-bottom:0}
+.fakty dd{padding-top:2px}
+.dwie>div>p,.split p{font-size:16.5px}
+}
+.hero-pod::after{background:linear-gradient(180deg,rgba(15,26,43,.62) 0%,rgba(15,26,43,.38) 26%,rgba(15,26,43,.72) 52%,rgba(15,26,43,.95) 100%)}
+.hero-pod h1,.hero-pod .lead{text-shadow:0 1px 14px rgba(15,26,43,.45)}
 </style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "HomeAndConstructionBusiness", "@id": "https://ag-likwidacje-remonty.pl/#firma", "name": "A.G. Likwidacje i Remonty Lokali", "legalName": "A.G. Agnieszka Glińska", "url": "https://ag-likwidacje-remonty.pl/", "telephone": "+48609613333", "email": "a.g.likwiduj-sklep@onet.pl", "taxID": "7742904338", "address": {"@type": "PostalAddress", "addressLocality": "Olsztyn", "addressRegion": "warmińsko-mazurskie", "addressCountry": "PL"}, "areaServed": {"@type": "Country", "name": "Polska"}, "description": "Likwidacje sklepów, remonty lokali z hydrauliką, instalacje elektryczne, naprawy oraz przeglądy i protokoły elektryczne. Siedziba w Olsztynie, prace w całej Polsce."}]}</script>
 </head>
 <body>
 <header class="top" id="top">
  <div class="wrap">
-  <a class="znak" href="#" aria-label="A.G. Likwidacje i Remonty Lokali - strona główna">
+  <a class="znak" href="./" aria-label="A.G. Likwidacje i Remonty Lokali - strona główna">
    <svg viewBox="0 0 40 40" aria-hidden="true"><rect x="2.5" y="2.5" width="35" height="35" fill="none" stroke="currentColor" stroke-width="3"/><rect x="2.5" y="2.5" width="35" height="8" fill="currentColor"/><path d="M8 16h24M8 21.5h24" stroke="currentColor" stroke-width="2.6"/><path d="M8 27h24" stroke="#3E6AF0" stroke-width="2.6"/></svg>
    <span><b>A.G.</b><span>Likwidacje i&nbsp;Remonty Lokali</span></span>
   </a>
   <nav class="menu" id="menu" aria-label="Menu główne">
-   <a href="#oferta">Oferta</a>
-   <a href="#protokoly">Przeglądy</a>
-   <a href="#naprawy">Naprawy</a>
-   <a href="#jak-pracujemy">Jak pracujemy</a>
-   <a href="#obszar">Obszar</a>
-   <a class="btn btn-k" href="#kontakt">Zapytaj o&nbsp;wycenę</a>
+   <a href="likwidacje-sklepow.html">Likwidacje sklepów</a><a href="remonty-lokali.html">Remonty</a><a href="instalacje-elektryczne.html">Elektryka</a><a href="naprawy.html">Naprawy</a><a href="przeglady-elektryczne.html">Przeglądy</a><a href="o-firmie.html">O firmie</a>
+   <a class="btn btn-k" href="kontakt.html">Kontakt i&nbsp;wycena</a>
   </nav>
   <button class="burger" type="button" aria-label="Otwórz menu" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
  </div>
@@ -234,7 +323,7 @@ form .btn{width:100%}
   <h1>Likwidacja sklepów.<br>Remonty, elektryka i&nbsp;hydraulika.</h1>
   <p class="lead"><strong>Lokal gotowy na dzień otwarcia.</strong> Podwykonawca dla sieci handlowych i&nbsp;generalnych wykonawców. Siedziba w&nbsp;Olsztynie, prace w&nbsp;całej Polsce.</p>
   <div class="cta">
-   <a class="btn btn-k" href="#kontakt">Zapytaj o&nbsp;wycenę</a>
+   <a class="btn btn-k" href="kontakt.html">Zapytaj o&nbsp;wycenę</a>
    <a class="btn btn-o" href="tel:+48609613333"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A17 17 0 0 1 3 5a2 2 0 0 1 2-2z"/></svg>609 613 333</a>
   </div>
   <ul class="atuty" aria-label="Ubezpieczenie i rejestry">
@@ -251,37 +340,16 @@ form .btn{width:100%}
    <h2>Co robimy dla firm</h2>
    <p>Pracujemy głównie jako podwykonawca: dla sieci sklepów, generalnych wykonawców i&nbsp;zarządców lokali. Zakres ustalamy pod konkretny obiekt i&nbsp;termin.</p>
   </div>
-  <div class="karty">
-   <article class="karta">
-    <figure><img src="img/likwidacje-560.webp" srcset="img/likwidacje-560.webp 560w, img/likwidacje-900.webp 900w" sizes="(max-width:760px) 80vw, (max-width:1000px) 72vw, 290px" width="900" height="1125" loading="lazy" alt="Manekiny za taśmą ostrzegawczą podczas likwidacji sklepu"></figure>
-    <h3>Likwidacje sklepów</h3>
-    <p>Demontaż regałów, reklam świetlnych i&nbsp;oświetlenia, wywóz i&nbsp;utylizacja, przywrócenie lokalu do stanu z&nbsp;umowy najmu.</p>
-   </article>
-   <article class="karta">
-    <figure><img src="img/remonty-560.webp" srcset="img/remonty-560.webp 560w, img/remonty-900.webp 900w" sizes="(max-width:760px) 80vw, (max-width:1000px) 72vw, 290px" width="900" height="1125" loading="lazy" alt="Wykończone wnętrze sklepu z regałami i oświetleniem"></figure>
-    <h3>Remonty lokali handlowych</h3>
-    <p>Ścianki i&nbsp;sufity z&nbsp;płyt, malowanie, hydraulika, zabudowy zaplecza. Lokal przygotowany pod wyposażenie i&nbsp;odbiór przez sieć.</p>
-   </article>
-   <article class="karta">
-    <figure><img src="img/instalacje-560.webp" srcset="img/instalacje-560.webp 560w, img/instalacje-900.webp 900w" sizes="(max-width:760px) 80vw, (max-width:1000px) 72vw, 290px" width="900" height="1125" loading="lazy" alt="Rozdzielnica elektryczna z zabezpieczeniami"></figure>
-    <h3>Instalacje elektryczne</h3>
-    <p>Zasilanie lokalu, rozdzielnice, oświetlenie sali i&nbsp;witryn, obwody pod kasy i&nbsp;urządzenia. Budowlanka i&nbsp;elektryka u&nbsp;jednego podwykonawcy.</p>
-   </article>
-   <article class="karta">
-    <figure><img src="img/przeglady-560.webp" srcset="img/przeglady-560.webp 560w, img/przeglady-900.webp 900w" sizes="(max-width:760px) 80vw, (max-width:1000px) 72vw, 290px" width="900" height="1125" loading="lazy" alt="Elektryk wykonuje pomiary miernikiem w rozdzielnicy"></figure>
-    <h3>Przeglądy elektryczne i&nbsp;protokoły</h3>
-    <p>Okresowe pomiary instalacji i&nbsp;komplet protokołów dla zarządcy, najemcy lub ubezpieczyciela, z&nbsp;listą ewentualnych usterek.</p>
-   </article>
-  </div>
-  <div class="naprawy" id="naprawy">
+  <div class="karty"><a class="karta" href="likwidacje-sklepow.html"><figure><img src="img/likwidacje-560.webp" srcset="img/likwidacje-560.webp 560w, img/likwidacje-900.webp 900w" sizes="(max-width:760px) 80vw, (max-width:1000px) 72vw, 290px" width="900" height="1125" loading="lazy" alt="Manekiny za taśmą ostrzegawczą podczas likwidacji sklepu"></figure><h3>Likwidacje sklepów</h3><p>Demontaż wyposażenia i&nbsp;reklam, wywóz i&nbsp;utylizacja, lokal oddany w&nbsp;stanie z&nbsp;umowy najmu.</p><span class="dalej">Zakres prac</span></a><a class="karta" href="remonty-lokali.html"><figure><img src="img/remonty-560.webp" srcset="img/remonty-560.webp 560w, img/remonty-900.webp 900w" sizes="(max-width:760px) 80vw, (max-width:1000px) 72vw, 290px" width="900" height="1125" loading="lazy" alt="Wykończone wnętrze sklepu z regałami i oświetleniem"></figure><h3>Remonty lokali i&nbsp;hydraulika</h3><p>Ścianki i&nbsp;sufity z&nbsp;płyt, malowanie, hydraulika, zabudowy zaplecza. Lokal gotowy pod wyposażenie.</p><span class="dalej">Zakres prac</span></a><a class="karta" href="instalacje-elektryczne.html"><figure><img src="img/instalacje-560.webp" srcset="img/instalacje-560.webp 560w, img/instalacje-900.webp 900w" sizes="(max-width:760px) 80vw, (max-width:1000px) 72vw, 290px" width="900" height="1125" loading="lazy" alt="Rozdzielnica elektryczna z zabezpieczeniami"></figure><h3>Instalacje elektryczne</h3><p>Zasilanie lokalu, rozdzielnice, oświetlenie sali i&nbsp;witryn, obwody pod kasy i&nbsp;urządzenia.</p><span class="dalej">Zakres prac</span></a><a class="karta" href="przeglady-elektryczne.html"><figure><img src="img/przeglady-560.webp" srcset="img/przeglady-560.webp 560w, img/przeglady-900.webp 900w" sizes="(max-width:760px) 80vw, (max-width:1000px) 72vw, 290px" width="900" height="1125" loading="lazy" alt="Elektryk wykonuje pomiary miernikiem w rozdzielnicy"></figure><h3>Przeglądy i&nbsp;protokoły elektryczne</h3><p>Okresowe pomiary instalacji i&nbsp;komplet protokołów dla zarządcy, najemcy lub ubezpieczyciela.</p><span class="dalej">Zakres prac</span></a></div>
+  <a class="naprawy" href="naprawy.html">
    <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M30 6a10 10 0 0 0-9.4 13.4L7 33a4.2 4.2 0 0 0 6 6l13.6-13.6A10 10 0 0 0 40 16l-6 2-4-4 2-6a10 10 0 0 0-2-2z"/></svg>
    <div>
     <h3>Naprawy typu złota rączka</h3>
     <p>Elektryka i&nbsp;hydraulika w&nbsp;pełnym zakresie: usterki, wymiany i&nbsp;naprawy w&nbsp;lokalach, mieszkaniach, mieszkaniach na wynajem oraz w&nbsp;domach jednorodzinnych; jedna ekipa zamiast kilku fachowców.</p>
    </div>
-   <a class="btn btn-k" href="#kontakt">Zgłoś naprawę</a>
-  </div>
-  <div class="realizacja" id="realizacje">
+   <span class="btn btn-k">Naprawy</span>
+  </a>
+  <div class="realizacja">
    <figure><img src="img/realizacja-likwidacja-1000.webp" srcset="img/realizacja-likwidacja-1000.webp 1000w, img/realizacja-likwidacja-1600.webp 1600w" sizes="(max-width:860px) 92vw, 680px" width="1600" height="1200" loading="lazy" alt="Sala sklepu po likwidacji: puste wnętrze bez regałów i wyposażenia"></figure>
    <div>
     <h3>Z&nbsp;naszych realizacji: sklep po likwidacji</h3>
@@ -297,13 +365,8 @@ form .btn{width:100%}
   <div>
    <h2>Przeglądy i&nbsp;protokoły elektryczne</h2>
    <p>Prawo budowlane wymaga sprawdzenia instalacji elektrycznej co najmniej raz na 5 lat, a&nbsp;sieci handlowe i&nbsp;ubezpieczyciele często proszą o&nbsp;pomiary częściej, na przykład po remoncie albo przed otwarciem lokalu. Pomiary robimy na miejscu i&nbsp;przekazujemy komplet protokołów. Jeśli wyjdą usterki, możemy je od razu usunąć.</p>
-   <ul class="lista">
-    <li>Skuteczność ochrony przeciwporażeniowej</li>
-    <li>Rezystancja izolacji przewodów</li>
-    <li>Sprawdzenie wyłączników różnicowoprądowych</li>
-    <li>Pomiary po remoncie i&nbsp;przed otwarciem lokalu</li>
-   </ul>
-   <p class="uwaga">Pomiary i&nbsp;protokoły z&nbsp;przeglądów elektrycznych.</p>
+   <ul class="lista"><li>Skuteczność ochrony przeciwporażeniowej</li><li>Rezystancja izolacji przewodów</li><li>Sprawdzenie wyłączników różnicowoprądowych</li><li>Pomiary po remoncie i&nbsp;przed otwarciem lokalu</li></ul>
+   <p style="margin-top:26px"><a class="btn btn-k" href="przeglady-elektryczne.html">Przeglądy i&nbsp;protokoły</a></p>
   </div>
  </div>
 </section>
@@ -338,38 +401,13 @@ form .btn{width:100%}
  </div>
 </section>
 
-<section class="sek szare" id="kontakt">
- <div class="wrap kontakt">
-  <div>
-   <h2>Zapytanie o&nbsp;wycenę</h2>
-   <p class="opis">Napisz, gdzie jest lokal, jaki jest zakres prac i&nbsp;na kiedy ma być gotowy. Odpowiemy z&nbsp;wyceną albo z&nbsp;pytaniami.</p>
-   <div class="dane">
-    <a href="tel:+48609613333"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A17 17 0 0 1 3 5a2 2 0 0 1 2-2z"/></svg>+48 609 613 333</a>
-    <a href="mailto:a.g.likwiduj-sklep@onet.pl"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="14"/><path d="M3 6l9 7 9-7"/></svg>a.g.likwiduj-sklep@onet.pl</a>
-    <p>A.G. Agnieszka Glińska, Olsztyn</p>
-   </div>
+<section class="pas">
+ <div class="wrap">
+  <div><h2>Opisz lokal i&nbsp;termin, odpowiemy z&nbsp;wyceną</h2><p>Napisz, gdzie jest lokal, jaki jest zakres prac i&nbsp;na kiedy ma być gotowy. Siedziba w&nbsp;Olsztynie, prace w&nbsp;całej Polsce.</p></div>
+  <div class="cta">
+   <a class="btn btn-k" href="kontakt.html">Zapytaj o&nbsp;wycenę</a>
+   <a class="btn btn-o" href="tel:+48609613333"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A17 17 0 0 1 3 5a2 2 0 0 1 2-2z"/></svg>609 613 333</a>
   </div>
-  <form id="formularz" novalidate>
-   <label>Firma<input name="firma" autocomplete="organization"></label>
-   <label>Imię i&nbsp;nazwisko<input name="osoba" autocomplete="name"></label>
-   <label>Telefon<input name="tel" type="tel" autocomplete="tel"></label>
-   <label>E-mail<input name="email" type="email" autocomplete="email"></label>
-   <label class="pelne">Rodzaj prac
-    <select name="rodzaj">
-     <option>Likwidacja sklepu</option>
-     <option>Remont lokalu</option>
-     <option>Instalacja elektryczna lub hydraulika</option>
-     <option>Naprawa (elektryka, hydraulika)</option>
-     <option>Przegląd elektryczny i&nbsp;protokoły</option>
-     <option>Kilka z&nbsp;powyższych</option>
-    </select>
-   </label>
-   <label class="pelne">Miejscowość i&nbsp;termin<input name="termin" placeholder="np. Warszawa, galeria handlowa, oddanie lokalu 15 marca"></label>
-   <label class="pelne">Opis prac<textarea name="opis" placeholder="Metraż, zakres, czy lokal jest czynny"></textarea></label>
-   <label class="pelne zgoda"><span><input type="checkbox" style="width:auto;margin:0 8px 0 0;vertical-align:-2px">Wyrażam zgodę na kontakt w&nbsp;sprawie zapytania.</span></label>
-   <div class="pelne"><button class="btn btn-k" type="submit">Wyślij zapytanie</button></div>
-   <p class="wynik" id="wynik" hidden role="status">To formularz pokazowy na podglądzie. Na docelowej stronie zapytanie trafi od razu na e-mail firmy.</p>
-  </form>
  </div>
 </section>
 </main>
@@ -377,7 +415,7 @@ form .btn{width:100%}
 <footer class="stopka">
  <div class="wrap">
   <div>
-   <a class="znak" href="#top" aria-label="A.G. Likwidacje i Remonty Lokali">
+   <a class="znak" href="./" aria-label="A.G. Likwidacje i Remonty Lokali - strona główna">
     <svg viewBox="0 0 40 40" aria-hidden="true"><rect x="2.5" y="2.5" width="35" height="35" fill="none" stroke="currentColor" stroke-width="3"/><rect x="2.5" y="2.5" width="35" height="8" fill="currentColor"/><path d="M8 16h24M8 21.5h24" stroke="currentColor" stroke-width="2.6"/><path d="M8 27h24" stroke="#4F78EE" stroke-width="2.6"/></svg>
     <span><b>A.G.</b><span>Likwidacje i&nbsp;Remonty Lokali</span></span>
    </a>
@@ -385,25 +423,28 @@ form .btn{width:100%}
   </div>
   <div>
    <h4>Oferta</h4>
-   <ul><li><a href="#oferta">Likwidacje sklepów</a></li><li><a href="#oferta">Remonty lokali</a></li><li><a href="#oferta">Instalacje elektryczne</a></li><li><a href="#naprawy">Naprawy: elektryka i&nbsp;hydraulika</a></li><li><a href="#protokoly">Przeglądy i&nbsp;protokoły</a></li></ul>
+   <ul><li><a href="likwidacje-sklepow.html">Likwidacje sklepów</a></li><li><a href="remonty-lokali.html">Remonty lokali</a></li><li><a href="instalacje-elektryczne.html">Instalacje elektryczne</a></li><li><a href="naprawy.html">Naprawy: elektryka i&nbsp;hydraulika</a></li><li><a href="przeglady-elektryczne.html">Przeglądy i&nbsp;protokoły</a></li></ul>
   </div>
   <div>
    <h4>Kontakt</h4>
-   <ul><li><a href="tel:+48609613333">+48 609 613 333</a></li><li><a href="mailto:a.g.likwiduj-sklep@onet.pl">a.g.likwiduj-sklep@onet.pl</a></li><li>A.G. Agnieszka Glińska</li><li>Olsztyn, prace w&nbsp;całej Polsce</li><li>Ubezpieczenie OC, wpis do BDO</li></ul>
+   <ul><li><a href="tel:+48609613333">+48 609 613 333</a></li><li><a href="mailto:a.g.likwiduj-sklep@onet.pl">a.g.likwiduj-sklep@onet.pl</a></li><li><a href="o-firmie.html">O firmie</a></li><li><a href="kontakt.html">Formularz zapytania</a></li><li><a href="polityka-prywatnosci.html">Polityka prywatności</a></li></ul>
   </div>
   <div class="dol">
-   <span>&copy; <span id="rok">2026</span> A.G. Agnieszka Glińska. Zdjęcia na podglądzie są poglądowe (Unsplash).</span>
-   <a class="wylinka-badge" href="https://wylinka.pl/?utm_source=ag-likwidacje-i-remonty-lokali.pl&amp;utm_medium=stopka&amp;utm_campaign=wykonanie" rel="noopener" title="Strona wykonana przez Wylinka"><svg viewBox="0 0 64 64" aria-hidden="true" focusable="false" fill="currentColor"><path d="M9.8 22.8l-1.2-7.9 2.2-3.7 15.5 4.6-.5 1.5-7.2 5.5 4.7 15.6 5-15.6 7 0 4.1 12.7-4.2-.9-2.6 1.8-.8-2.2-5.3 15.6-4.3 0 .4 .2-2.1 2.8-1.3-1.1 1.1-1.4-3.1 .2-.1-1.7 2.2-.1-5.7-16.5-4.8 .6-.8 3.1 0 .5-.3 .5 .8 2.2-1.6 .5-.4-1.3-.8 1.6-1.5-.8 .8-1.6-1.4 .6-.6-1.6 2.3-.8 .2-.4 1.3-4.8 5.9-.8-2.4-6.9zM15.2 13.7l-.1-.4-.4 .8-.1 .8 .1 1 .1 .4 .3 .7 .3-.9 .1-.7 0-.8z"/><path class="wy-pod" d="M37.1 49.8l-4.5-13.3 2.6-1.8 4.2 .9 .9 2.8 3-9.7 0-.5 .1-.8 3.2-8.4 .5-1 .6-1 .9-1.1 1.3-1 1.1-.7 1.4-.5 1.4-.3 .7 0 .9 0 1.2 .3 1.4 .6 .8 .5 .7 .7 .6 .7 .5 .9 .3 .9 .1 .9 0 .8-.2 .9-.5 .9-.5 .6-.7 .5-.7 .3-.1-.1 0-.1 .5-.5 .3-.7 .2-.5 0-.6-.1-.6-.3-.7-.4-.5-.4-.4-.5-.3-.6-.3-.7 0-.7 .1-.6 .1-.5 .4-.5 .5-.3 .5-.2 .7-.1 1.5-1.4 5.1-.8 3.3-.3 .7-.5 .7-6 17.5 1.9 .1-.1 1.7-3.1-.2 1.1 1.4-1.3 1.1-2.1-2.8 .4-.2z"/><path class="wy-old" d="M40.8 50l.4-.2-4.1 0-4.2-12.5 2.5-1.7 4.3 .9 .6 1.9 .6-1.6 0-.3 2.4-7.8 0-.5 .1-.8 3.2-8.4 .4-.8 .6-.9 .9-1.2 .9-.9 1.3-.8 1.4-.6 1.2-.3 1.4-.1 1.3 .1 .6 .2 .8 .3 1.1 .6 .9 .7 .7 .9 .5 .9 .3 .9 .1 1.1-.1 .9-.3 .9-.4 .7-.6 .7-.6 .4-.6 .2-.1-.1 0-.1 .5-.5 .3-.7 .2-.5 0-.5-.1-.6-.2-.6-.3-.5-.4-.5-.5-.3-.6-.3-.7-.1-.6 0-.6 .1-.6 .3-.6 .5-.3 .4-.2 .5-.1 .5-.1 1.5-1.4 5.1-.8 3.3-.3 .7-.5 .7-6 17.5 1.9 .1-.1 1.7-3.1-.2 1.1 1.4-1.3 1.1zM49.6 17.1l.6 1.7-1.5 1.9 .4 .4 1.8-2.1-.7-2.1zM48.1 28.3l.5 1.8-1.7 1.8 .4 .4 1.9-2-.6-2.2zM37.9 41.7l1.7-1.5-.4-.4-1.7 1.4zM42.6 38.7l-1.5 2.8 1.1 2-1.3 2.6 .5 .2 1.5-2.8-1.1-2 1.4-2.5z"/></svg><span>wykonanie: <b>Wylinka</b></span></a>
+   <span>&copy; <span class="rok">2026</span> A.G. Agnieszka Glińska, Olsztyn. Ubezpieczenie OC, wpis do BDO.</span>
+   <a class="wylinka-badge" href="https://wylinka.pl/?utm_source=ag-likwidacje-remonty.pl&amp;utm_medium=stopka&amp;utm_campaign=wykonanie" rel="noopener" title="Strona wykonana przez Wylinka"><svg viewBox="0 0 64 64" aria-hidden="true" focusable="false" fill="currentColor"><path d="M9.8 22.8l-1.2-7.9 2.2-3.7 15.5 4.6-.5 1.5-7.2 5.5 4.7 15.6 5-15.6 7 0 4.1 12.7-4.2-.9-2.6 1.8-.8-2.2-5.3 15.6-4.3 0 .4 .2-2.1 2.8-1.3-1.1 1.1-1.4-3.1 .2-.1-1.7 2.2-.1-5.7-16.5-4.8 .6-.8 3.1 0 .5-.3 .5 .8 2.2-1.6 .5-.4-1.3-.8 1.6-1.5-.8 .8-1.6-1.4 .6-.6-1.6 2.3-.8 .2-.4 1.3-4.8 5.9-.8-2.4-6.9zM15.2 13.7l-.1-.4-.4 .8-.1 .8 .1 1 .1 .4 .3 .7 .3-.9 .1-.7 0-.8z"/><path class="wy-pod" d="M37.1 49.8l-4.5-13.3 2.6-1.8 4.2 .9 .9 2.8 3-9.7 0-.5 .1-.8 3.2-8.4 .5-1 .6-1 .9-1.1 1.3-1 1.1-.7 1.4-.5 1.4-.3 .7 0 .9 0 1.2 .3 1.4 .6 .8 .5 .7 .7 .6 .7 .5 .9 .3 .9 .1 .9 0 .8-.2 .9-.5 .9-.5 .6-.7 .5-.7 .3-.1-.1 0-.1 .5-.5 .3-.7 .2-.5 0-.6-.1-.6-.3-.7-.4-.5-.4-.4-.5-.3-.6-.3-.7 0-.7 .1-.6 .1-.5 .4-.5 .5-.3 .5-.2 .7-.1 1.5-1.4 5.1-.8 3.3-.3 .7-.5 .7-6 17.5 1.9 .1-.1 1.7-3.1-.2 1.1 1.4-1.3 1.1-2.1-2.8 .4-.2z"/><path class="wy-old" d="M40.8 50l.4-.2-4.1 0-4.2-12.5 2.5-1.7 4.3 .9 .6 1.9 .6-1.6 0-.3 2.4-7.8 0-.5 .1-.8 3.2-8.4 .4-.8 .6-.9 .9-1.2 .9-.9 1.3-.8 1.4-.6 1.2-.3 1.4-.1 1.3 .1 .6 .2 .8 .3 1.1 .6 .9 .7 .7 .9 .5 .9 .3 .9 .1 1.1-.1 .9-.3 .9-.4 .7-.6 .7-.6 .4-.6 .2-.1-.1 0-.1 .5-.5 .3-.7 .2-.5 0-.5-.1-.6-.2-.6-.3-.5-.4-.5-.5-.3-.6-.3-.7-.1-.6 0-.6 .1-.6 .3-.6 .5-.3 .4-.2 .5-.1 .5-.1 1.5-1.4 5.1-.8 3.3-.3 .7-.5 .7-6 17.5 1.9 .1-.1 1.7-3.1-.2 1.1 1.4-1.3 1.1zM49.6 17.1l.6 1.7-1.5 1.9 .4 .4 1.8-2.1-.7-2.1zM48.1 28.3l.5 1.8-1.7 1.8 .4 .4 1.9-2-.6-2.2zM37.9 41.7l1.7-1.5-.4-.4-1.7 1.4zM42.6 38.7l-1.5 2.8 1.1 2-1.3 2.6 .5 .2 1.5-2.8-1.1-2 1.4-2.5z"/></svg><span>wykonanie: <b>Wylinka</b></span></a>
   </div>
  </div>
 </footer>
 <script>
 (function(){
  var t=document.getElementById('top'),b=t.querySelector('.burger');
+ function zamknij(){t.classList.remove('otwarte');b.setAttribute('aria-expanded','false');b.setAttribute('aria-label','Otwórz menu');document.body.style.overflow='';}
  b.addEventListener('click',function(){var o=t.classList.toggle('otwarte');b.setAttribute('aria-expanded',o);b.setAttribute('aria-label',o?'Zamknij menu':'Otwórz menu');document.body.style.overflow=o?'hidden':'';});
- t.querySelectorAll('.menu a').forEach(function(a){a.addEventListener('click',function(){t.classList.remove('otwarte');b.setAttribute('aria-expanded','false');document.body.style.overflow='';});});
- document.getElementById('formularz').addEventListener('submit',function(e){e.preventDefault();var w=document.getElementById('wynik');w.hidden=false;w.scrollIntoView({block:'nearest',behavior:'smooth'});});
- document.getElementById('rok').textContent=new Date().getFullYear();
+ t.querySelectorAll('.menu a').forEach(function(x){x.addEventListener('click',zamknij);});
+ document.addEventListener('keydown',function(e){if(e.key==='Escape')zamknij();});
+ var f=document.getElementById('formularz');
+ if(f)f.addEventListener('submit',function(e){e.preventDefault();var w=document.getElementById('wynik');w.hidden=false;w.scrollIntoView({block:'nearest',behavior:'smooth'});});
+ document.querySelectorAll('.rok').forEach(function(r){r.textContent=new Date().getFullYear();});
 })();
 </script>
 </body>
